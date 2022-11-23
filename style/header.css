@@ -1,0 +1,61 @@
+header{
+    grid-area: header;
+}
+
+header .container{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(29, 88, 252, 0.89);
+}
+
+.container h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 30px;
+    color: #fff;
+}
+
+.container label{
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+}
+
+#search-contact{
+    background-color: rgba(102, 143, 255, 0.603);
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+#search-contact:focus{
+    border-color: rgba(102, 143, 255, 0.203);
+    outline-color: rgba(102, 143, 255, 0.603);
+}
+
+#search-contact::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.img-menu,
+#add_icon{
+    height: 30px;
+    cursor: pointer;
+}
+
+.icon-search{
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    pointer-events: none;
+}
+
+#add_icon{
+    margin-left: 10px;
+}

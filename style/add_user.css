@@ -1,0 +1,111 @@
+.add_contact-off{
+    display: none;
+    left: 9999px;
+}
+
+.add_contact{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.content-form{
+    width: 100%;
+    height: 100%;
+}
+
+.add_contact .container{
+    max-width: 480px;
+    width: 100%;
+    height: 530px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 13px 13px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.add_contact .container form{
+    height: 400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_contact .container form input{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border:1px solid #3333;
+}
+
+.add_contact .container form label{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icon_user{
+    height: 50px;
+    margin:0
+}
+
+.add_contact .container header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    background-color: #3333;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.add_contact .container header h1{
+    color: #000;
+}
+
+.close{
+    height: 20px;
+    margin-left: auto;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.add-user{
+    max-width: 330px;
+    width: 100%;
+    background-color: rgba(102, 143, 255, 0.603);
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-user:hover{
+    background-color: rgba(102, 143, 255, 1);
+    cursor: pointer;
+}
+
+.select{
+    margin-bottom: 20px;
+}
+
+.select > label {
+    margin-left: 20px;
+}
+
+.btnInput{
+    max-width: 320px;
+    width: 100%;
+}

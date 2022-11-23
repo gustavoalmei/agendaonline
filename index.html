@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Online</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/aside.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/add_user.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./images/menu-line.svg" class="img-menu" />
+        <h1>Contatos</h1>
+        <label for="search-contact">
+          <input
+            type="search"
+            name="search-contact"
+            id="search-contact"
+            placeholder="Nome do contato ou E-mail."
+          />
+          <img src="./images/icon-search.svg" class="icon-search" />
+        </label>
+        <label for="add_icon">
+          <a href="#">
+            <img src="./images/icon_add.svg" id="add_icon" />
+          </a>
+        </label>
+      </div>
+    </header>
+    <aside>
+      <div class="container">
+        <div class="groups">
+          <div class="group-contacts">
+            <ul>
+              <li>
+                <a href="#">Contatos<span id="number-contacts">(0)</span></a>
+              </li>
+              <li>
+                <a href="#" id="btn-group">
+                  Grupos
+                  <img id="btn-down" src="./images/icon-down.svg" />
+                </a>
+                <ol id="list-group" class="list-off">
+                  <li>Grupo 1</li>
+                  <li>Grupo 2</li>
+                  <li id="addGroup" class="group-create">
+                    <img class="bttn-group" src="./images/icon-group.svg" />
+                    Criar novo Grupo
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div class="configuration">
+            <nav>
+              <ul>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#">Algum problema?</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Ajuda</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="container">
+        <div class="container-table">
+          <table cellspacing="0">
+            <tbody id="tbody">
+              <tr>
+                <th class="name">Nome</th>
+                <th class="email">E-mail</th>
+                <th class="group">Grupo</th>
+                <th class="id-contact">ID</th>
+                <th class="number">Número</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="add_contact-off" id="newContact">
+        <div class="container">
+          <div class="content-form">
+            <header>
+              <img src="./images/icon_user.svg" class="icon_user" />
+              <h1>Novo usuário</h1>
+              <img
+                id="btn_close"
+                class="btn close"
+                src="./images/icon_close.svg"
+                alt="Icon close"
+              />
+            </header>
+            <form action="">
+              <label for="name">
+                Name<br />
+                <input type="text" name="name" id="name" class="btnInput" required/>
+              </label>
+              <label for="email">
+                E-mail<br />
+                <input type="email" name="email" id="email" class="btnInput" required/>
+              </label>
+              <label for="number">
+                Number<br />
+                <input type="number" name="number" id="number" class="btnInput" required/>
+              </label>
+              <div class="select">
+                <label for="option1" class="selectGroup">
+                  Group 1
+                  <input type="radio" name="group" id="option1" value="Group 1">
+                </label>
+                <label>
+                  Group 2
+                  <input type="radio" name="group" id="option2" value="Group 2">
+                </label>
+              </div>
+              <button id="addUser" class="add-user">Add User</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
